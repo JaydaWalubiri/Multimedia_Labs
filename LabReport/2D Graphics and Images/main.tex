@@ -9,7 +9,7 @@
 
 \onehalfspacing
 
-\title{\textbf{Introduction to Vision and Robotics LAB}}
+\title{\textbf{2D Graphics and Images}}
 \begin{document}
 
 \maketitle
@@ -32,8 +32,6 @@
 \subsection{Introduction}
 
 Raster and vector graphics represent images differently. Raster graphics store images as pixels while vector graphics use mathematical shapes and paths. Raster images are commonly used for photographs because they can represent detailed colour information, while vector graphics are mainly used for logos, icons and illustrations due to their scalability.
-
-In this lab, an SVG logo was created manually and exported as a PNG image. Both formats were then enlarged and compared in order to observe differences in sharpness, editability and file size. The experiment demonstrates how vector graphics maintain image quality during scaling while raster graphics become pixelated when enlarged.
 
 \subsection{Procedure}
 
@@ -106,11 +104,11 @@ PNG & 8.30 KB & Loses quality when enlarged & Requires image editing tools \\
 
 \subsection{Discussion}
 
-The experiment showed clear differences between raster and vector graphics. The SVG image maintained smooth edges and sharp text after enlargement because it stores geometric drawing instructions instead of pixels. The browser therefore redraws the image whenever the size changes.
+The experiment showed clear differences between raster and vector graphics. The SVG image maintained smooth edges and sharp text after enlargement because it stores geometric drawing instructions instead of pixels.
 
 The PNG image became blurry and pixelated when enlarged because raster images contain a fixed number of pixels. Enlarging the image stretches these pixels beyond their original dimensions, reducing image quality.
 
-The SVG file was also easier to edit because the contents could be modified directly in a text editor. In contrast, editing the PNG image would require image editing software. The results therefore show that vector graphics are more suitable for logos and illustrations while raster graphics are better suited for photographs and detailed images.
+The SVG file was also easier to edit because the contents could be modified directly in a text editor. In contrast, editing the PNG image would require image editing software. The results therefore show that vector graphics are more suitable for logos and illustrations while raster graphics are better for photographs and detailed images.
 
 \subsection{Questions}
 
@@ -169,8 +167,6 @@ The objective of the lab was successfully achieved by comparing raster and vecto
 \subsection{Introduction}
 
 Digital images are stored as raster data consisting of pixels arranged in rows and columns. The storage size of an image depends on its dimensions, number of channels and bit depth. Images may also be compressed to reduce storage space and improve transmission efficiency.
-
-In this lab, different images were analysed using Python to inspect their properties and compare compressed file sizes with estimated uncompressed raster sizes. Manual calculations were also performed to understand how image dimensions and colour channels affect storage requirements.
 
 \subsection{Procedure}
 
@@ -320,7 +316,7 @@ The screenshot and logo images achieved higher compression ratios because they c
 
 The results also showed that increasing image dimensions, channels or bit depth increases storage requirements. Images containing alpha channels require additional storage because transparency information must also be stored for each pixel.
 
-These observations explain why image compression is important for efficient storage and web delivery. Without compression, image files would require significantly more bandwidth and storage space.
+These observations explain why image compression is important for efficient storage and web delivery.
 
 \subsection{Questions}
 
@@ -377,9 +373,7 @@ The lab successfully demonstrated how image dimensions, colour channels and bit 
 
 \subsection{Introduction}
 
-Different image formats use different compression techniques which affect file size and image quality. JPEG is a lossy compression format that reduces file size by removing visually less important information, making it suitable for photographs. PNG is a lossless format that preserves all image data and is commonly used for screenshots, logos and diagrams.
-
-In this lab, JPEG images were exported at different quality levels and compared with PNG versions in order to observe compression artefacts and evaluate format suitability.
+Different image formats use different compression techniques which affect file size and image quality. JPEG is a lossy compression format that reduces file size by removing visually less important information, making it suitable for photographs. PNG is a lossless format that preserves all image data and is commonly used for screenshots, logos and diagram.
 
 \subsection{Procedure}
 
@@ -484,8 +478,6 @@ The lab demonstrated that JPEG compression quality directly affects image clarit
 \subsection{Introduction}
 
 Colour representation in digital systems depends on the application domain. RGB is an additive model used in screens where light is emitted, while CMY is a subtractive model used in printing. Alpha compositing introduces transparency, allowing images to be blended based on opacity values.
-
-This lab explores alpha blending through both manual computation and Python implementation, as well as basic conversion between RGB and CMY colour models.
 
 \subsection{Procedure}
 
